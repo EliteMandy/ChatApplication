@@ -1,0 +1,9 @@
+# render.yaml
+services:
+  - type: web
+    name: my-website
+    env: static
+    staticPublishPath: public  # Adjust this path to match the folder containing your static files
+    buildCommand: npm run build # Optional, if a build step is required
+    branch: main  # Replace with the branch you want to deploy
+    regions: oregon  # Adjust to the desired deployment region
